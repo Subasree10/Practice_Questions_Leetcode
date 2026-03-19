@@ -1,0 +1,15 @@
+class Solution {
+    public boolean isThree(int n) {
+        int div=0;
+        for(int i=1;i<=n;i++){
+            if(n%i==0){
+                div++;
+            }
+        }
+        if(div==3) return true;
+        else return false;
+    }
+}
+// taken a variable div and initialising it with zero.
+// finding the total number of divisors.
+// if div==3 returning true else false
